@@ -100,3 +100,7 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 .DS_Store
+
+# Visual Paradigm backup and lock files
+*.vpp.bak_*
+*.vpp.lck
