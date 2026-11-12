@@ -1,3 +1,5 @@
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace ElectronicsStore.Entities;
 
 public class OrderItem
@@ -8,6 +10,7 @@ public class OrderItem
 
     public int Count { get; private set; }
 
+    [Column(TypeName = "numeric(12,2)")]
     public decimal Price { get; private set; }
 
     public static OrderItem CreateElement(int orderId, int productId, int count, decimal price)
